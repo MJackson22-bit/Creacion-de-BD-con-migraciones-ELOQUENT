@@ -73,7 +73,6 @@
 
             </table>
 
-            <a href="profesors" class="btn btn-link">Refresh URL</a>
         </div>
     @endif
     <br />

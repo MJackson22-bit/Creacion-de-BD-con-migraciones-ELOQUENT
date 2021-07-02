@@ -63,4 +63,12 @@ class ClaseController extends Controller
         }
         return view('Clase.notification', compact('message'));
     }
+
+    public function viewRelations($id){
+        $relation = Clase::with(['profesors', 'aulas'])->where('id', $id)->get()[0];
+        $message = "";
+        //print_r($relation->nombre);
+        return view('Clase.view_relations', compact('relation', 'message'));
+    }
+    
 }

@@ -64,4 +64,12 @@ class AulaController extends Controller
         }
         return view('Aula.notification', compact('message'));
     }
+
+    
+    public function viewRelations($id){
+        $relation = Aula::with(['clases', 'profesors'])->where('id', $id)->get()[0];
+        $message = "";
+        //print_r($relation->nombre);
+        return view('Aula.view_relations', compact('relation', 'message'));
+    }
 }

@@ -66,7 +66,6 @@
 
             </table>
 
-            <a href="/aulas" class="btn btn-link">Refresh URL</a>
         </div>
     @endif
     <br />

@@ -69,4 +69,11 @@ class ProfesorController extends Controller
         }
         return view('Profesor.notification', compact('message'));
     }
+
+    public function viewRelations($id){
+        $relation = Profesor::with(['clases', 'aulas'])->where('id', $id)->get()[0];
+        $message = "";
+        //print_r($relation->nombre);
+        return view('Profesor.view_relations', compact('relation', 'message'));
+    }
 }

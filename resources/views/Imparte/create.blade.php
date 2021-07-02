@@ -10,7 +10,7 @@
                     <div class="row" style="margin-bottom:20px;">
                         <div class="col">
                             <label for="id_profesor"><strong>Id Profesor</strong></label>
-                            <select class="form-control" id="id_profesor" name="id_profesor">
+                            <select class="form-control" id="id_profesor" name="id_profesor" required>
                                 @if (count($listaProfesor) > 0)
                                     @foreach ($listaProfesor as $profesor)
                                         <option value="{{ $profesor->id }}">{{ $profesor->id }}</option>
@@ -20,7 +20,7 @@
                         </div>
                         <div class="col">
                             <label for="id_aulas"><strong>Id Aula</strong></label>
-                            <select class="form-control" id="id_aulas" name="id_aulas">
+                            <select class="form-control" id="id_aulas" name="id_aulas" required>
                                 @if (count($listaAula) > 0)
                                     @foreach ($listaAula as $aula)
                                         <option value="{{ $aula->id }}">{{ $aula->id }}</option>
@@ -30,7 +30,7 @@
                         </div>
                         <div class="col">
                             <label for="id_clases"><strong>Id Clase</strong></label>
-                            <select class="form-control" id="id_clase" name="id_clase">
+                            <select class="form-control" id="id_clase" name="id_clase" required>
                                 @if (count($listaClase) > 0)
                                     @foreach ($listaClase as $clase)
                                         <option value="{{ $clase->id }}">{{ $clase->id }}</option>

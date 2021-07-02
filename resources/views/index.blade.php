@@ -15,7 +15,7 @@
     <div class="container" style="margin-top:10px;">
         <h1 align="center"><strong>Administración de la Base de Datos de la Universidad</strong></h1>
     </div>
-    <div class="container">
+    <div class="container" align="center">
         <div class="row">
             <div class="col-sm">
 
